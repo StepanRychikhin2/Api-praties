@@ -1,31 +1,43 @@
-// https://api.github.com/users
+// // https://api.github.com/users
 
-// Отримати список користувачів з GitHub API Опис:
-// Використайте публічне API GitHub для отримання списку користувачів.Зробіть GET - запит
-// за адресою https://api.github.com/users та перегляньте отримані дані щодо користувачів.
+// // Отримати список користувачів з GitHub API Опис:
+// // Використайте публічне API GitHub для отримання списку користувачів.Зробіть GET - запит
+// // за адресою https://api.github.com/users та перегляньте отримані дані щодо користувачів.
 
-const listUser = document.querySelector(".users")
-const URL = "https://api.github.com/users"
+// const listUser = document.querySelector(".users")
+// const URL = "https://api.github.com/users"
 
-function fetchUsers(url) {
+// function fetchUsers(url) {
     
-const data = fetch(url)
-return data;
-}
+// const data = fetch(url)
+// return data;
+// }
 
-fetchUsers(URL).then((data) => data.json()).then((data) => createUserMapArt(data)).catch((error) => console.log(error))
+// fetchUsers(URL).then((data) => data.json()).then((data) => createUserMapArt(data)).catch((error) => console.log(error))
 
 
-function createUserMapArt(data) {
- const listMarkUp = data.map((user) => {
-   const listElem = `
-   <li >
-   <img src="${user.avatar_url}" alt="${user.type}">
-   <p class="login">${user.login}</p>
-   <p class="url">${user.url}</p>
-   </li>`;
-return listElem;
-  })
-  listUser.innerHTML = listMarkUp;
+// function createUserMapArt(data) {
+//  const listMarkUp = data.map((user) => {
+//    const listElem = `
+//    <li >
+//    <img src="${user.avatar_url}" alt="${user.type}">
+//    <p class="login">${user.login}</p>
+//    <p class="url">${user.url}</p>
+//    </li>`;
+// return listElem;
+//   })
+//   listUser.innerHTML = listMarkUp;
    
-}
+// }
+
+
+
+// Отримати погоду за допомогою OpenWeatherMap API Опис:
+// Використайте публічне API OpenWeatherMap для отримання поточної погоди.
+// Зробіть GET - запит за адресою https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY},
+// де { city } - назва міста, а { API_KEY } - ваш ключ API OpenWeatherMap.
+// Перегляньте отримані дані щодо погоди.
+
+const input = document.querySelector(".input")
+const api = "https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}"
+const city = input.value
