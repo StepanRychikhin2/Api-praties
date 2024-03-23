@@ -105,24 +105,22 @@
 //     });
 // });
 
-const list = document.querySelector(".list")
-fetch("http://localhost:3000/productsa")
-.then((res) => res.json())
-.then((data) => {
-   const listMarkUp = data.map((user) => {
-   const listElem = `
-   <li >
-   <p class="login">name:${user.name}</p>
-   <p class="login">prise:${user.prise}</p>
-   <p class="url">id:${user.id}</p>
-   </li>`;
-return listElem;
-  })
-  list.innerHTML = listMarkUp;
+// const list = document.querySelector(".list")
+// fetch("http://localhost:3000/productsa")
+// .then((res) => res.json())
+// .then((data) => {
+//    const listMarkUp = data.map((user) => {
+//    const listElem = `
+//    <li >
+//    <p class="login">name:${user.name}</p>
+//    <p class="login">prise:${user.prise}</p>
+//    <p class="url">id:${user.id}</p>
+//    </li>`;
+// return listElem;
+//   })
+//   list.innerHTML = listMarkUp;
    
   
-})
-
-
+// })
 
 
