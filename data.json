@@ -1,0 +1,47 @@
+{
+    "productsa": [
+    {
+        "name": "apple",
+        "prise": 100,
+        "id": 1
+    },
+    {
+        "name": "watermelon",
+        "prise": 20,
+        "id": 2
+    },
+    {
+        "name": "plum",
+        "prise": 324,
+        "id": 3
+    },
+    {
+        "name": "apricot",
+        "prise": 45345,
+        "id": 4
+    },
+    {
+        "name": "grapes",
+        "prise": 123,
+        "id": 5
+    }
+],
+"machecilaly": [
+    {
+        "name6": "PK",
+        "prise": 234234,
+        "id": 6
+    },
+    {
+        "name6": "RTX 4090",
+        "prise": 23452345,
+        "id": 7
+    },
+    {
+        "name6": "macbok",
+        "prise": 2342344,
+        "id": 8
+    }
+   
+]
+}

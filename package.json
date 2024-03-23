@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  },
+  "scripts": {
+    "start": "npx json-server data.json",
+    "dev": "node index.js"
+
+  }
+}
+
+
